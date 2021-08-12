@@ -1,0 +1,20 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	smartlabsuniminuto.com. root.smartlabsuniminuto.com. (
+			      2			; Serial
+			 604800			; Refresh
+			  86400			; Retry
+			2419200			; Expire
+			 604800 )		; Negative Cache TTL
+;
+@	IN	NS	smartlabsuniminuto.com.
+@	IN	A	204.93.196.64
+server	IN	A	204.93.196.64
+host	IN	A	204.93.196.64
+client  IN      A       204.93.196.64    
+www     IN      A       204.93.196.64
+4       IN      PTR     smartlabsuniminuto.com
+4       IN      PTR     client.dominio.local
+;@	IN	AAAA	::1
